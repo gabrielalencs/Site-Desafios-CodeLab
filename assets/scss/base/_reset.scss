@@ -1,3 +1,5 @@
+@use '../abstracts/colors' as color;
+
 // Google Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
@@ -13,6 +15,20 @@ html {
 }
 
 body {
-    background-color: #161618;
+    background-color: color.$dark-10;
     color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all .3s;
+
+    &:visited {
+        color: #FFF;
+    }
+
+    &:active {
+        color: #dbdbdb;
+    }
 }

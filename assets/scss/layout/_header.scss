@@ -4,7 +4,7 @@
 
 
 .header {
-    background-color: #1C1C1F;
+    background-color: color.$dark-20;
     border-bottom: .1rem solid color.$primary-color;
 
     &__content {
@@ -19,10 +19,14 @@
     &__brand {
         font-size: 2.5rem;
         font-family: "Chakra Petch", sans-serif;
-
-        & span:nth-child(1),
-        & span:nth-child(3) {
+        font-weight: 600;
+        
+        & span:nth-child(1) {
             color: color.$primary-color;
+        }
+
+        & span:nth-child(2) {
+            margin-left: -.3rem;
         }
     }
 
