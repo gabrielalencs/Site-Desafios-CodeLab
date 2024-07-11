@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #161618;
+  color: #FFF;
+}
+
+.header {
+  background-color: #1C1C1F;
+  border-bottom: 0.1rem solid #8946ff;
+}
+.header__content {
+  max-width: 121.6rem;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__brand {
+  font-size: 2.5rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+.header__brand span:nth-child(1), .header__brand span:nth-child(3) {
+  color: #8946ff;
+}
+.header .themeToggle {
+  color: #bbb;
+  width: 3em;
+}
+.header .sunMoon {
+  transition: all 1s;
+}
+.header .st-sunMoonThemeToggleBtn {
+  position: relative;
+  cursor: pointer;
+}
+.header .st-sunMoonThemeToggleBtn .themeToggleInput {
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 1;
+}
+.header .st-sunMoonThemeToggleBtn svg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  transform: rotate(40deg);
+}
+.header .st-sunMoonThemeToggleBtn svg .sunMoon {
+  transform-origin: center center;
+  transition: inherit;
+  transform: scale(1);
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay {
+  transform-origin: center center;
+  transform: scale(0);
+}
+.header .st-sunMoonThemeToggleBtn svg mask > circle {
+  transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+  transform: translate(0px, 0px);
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay2 {
+  animation-delay: 0.05s !important;
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay3 {
+  animation-delay: 0.1s !important;
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay4 {
+  animation-delay: 0.17s !important;
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay5 {
+  animation-delay: 0.25s !important;
+}
+.header .st-sunMoonThemeToggleBtn svg .sunRay5 {
+  animation-delay: 0.29s !important;
+}
+.header .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg {
+  transform: rotate(90deg);
+}
+.header .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg mask > circle {
+  transform: translate(16px, -3px);
+}
+.header .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunMoon {
+  transform: scale(0.55);
+}
+.header .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunRay {
+  animation: showRay1832 0.4s ease 0s 1 forwards;
+}
+@keyframes showRay1832 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
