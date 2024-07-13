@@ -127,7 +127,6 @@ a:active {
   max-width: 121.6rem;
   margin: 10rem auto 0;
   font-family: "Archivo", sans-serif;
-  text-align: center;
 }
 @media (width >= 1200px) {
   .introduction {
@@ -137,9 +136,14 @@ a:active {
   }
 }
 .introduction__text {
-  padding: 0 4rem;
+  padding: 0 3rem;
   max-width: 70rem;
   margin: 0 auto;
+}
+@media (width >= 768px) {
+  .introduction__text {
+    text-align: center;
+  }
 }
 @media (width >= 1200px) {
   .introduction__text {
@@ -153,8 +157,13 @@ a:active {
   transition: all 0.3s;
 }
 .introduction__text span {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #cccccc;
+}
+@media (width > 360px) {
+  .introduction__text span {
+    font-size: 1.5rem;
+  }
 }
 @media (width >= 768px) {
   .introduction__text span {
@@ -167,22 +176,29 @@ a:active {
   }
 }
 .introduction__text h1 {
-  margin-top: 1rem;
-  font-size: 4rem;
+  margin: 1rem 0 0;
+  font-size: 2.5rem;
   white-space: nowrap;
   overflow: hidden;
   width: 18ch;
   animation: typing 3s steps(17) infinite alternate, pulse 0.5s infinite alternate;
   border-right: 5px solid #8946ff;
 }
+@media (width > 360px) {
+  .introduction__text h1 {
+    font-size: 3.3rem;
+  }
+}
 @media (width >= 768px) {
   .introduction__text h1 {
     font-size: 4.5rem;
+    margin: 2rem auto 0;
   }
 }
 @media (width >= 1200px) {
   .introduction__text h1 {
     font-size: 5.5rem;
+    margin: 2rem 0 0;
   }
 }
 .introduction__text h1 span {
@@ -212,9 +228,14 @@ a:active {
   }
 }
 .introduction__text p {
-  margin-top: 2rem;
-  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.7;
+}
+@media (width > 360px) {
+  .introduction__text p {
+    font-size: 1.5rem;
+  }
 }
 @media (width >= 768px) {
   .introduction__text p {
@@ -228,6 +249,7 @@ a:active {
 }
 .introduction__container-image {
   display: none;
+  text-align: center;
 }
 @media (width >= 1200px) {
   .introduction__container-image {
@@ -254,7 +276,7 @@ a:active {
 
 .projects {
   max-width: 121.6rem;
-  margin: 15rem auto 55rem;
+  margin: 10rem auto 55rem;
   font-family: "Archivo", sans-serif;
   padding: 0 4rem;
 }
@@ -272,30 +294,21 @@ a:active {
   background-image: linear-gradient(90deg, #794fdb 0%, #4f22b9 92.32%);
 }
 .projects__container {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: space-between;
   gap: 5rem;
 }
 .projects__project {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: 2px solid #1b1b1b;
   border-radius: 2rem;
 }
-.projects .project__texts {
-  padding: 5rem 3rem;
-  background-color: #1C1C1F;
-  border-radius: 0 0 1rem 1rem;
-}
-.projects .project__texts .project__technologies {
-  font-size: 1.6rem;
-  color: #cccccc;
-}
 .projects .project__images {
   border-radius: 2rem 2rem 0 0;
-  height: 280px;
+  height: 20rem;
   background-image: url("../images/projects/projeto_01.png");
   background-repeat: no-repeat;
   background-position: top;
@@ -304,6 +317,47 @@ a:active {
 }
 .projects .project__images:hover {
   background-position: bottom;
+}
+.projects .project__texts {
+  padding: 4rem 3rem;
+  background-color: #1C1C1F;
+  border-radius: 0 0 1rem 1rem;
+}
+.projects .project__texts .project__technologies {
+  font-size: 1.3rem;
+  color: #cccccc;
+}
+.projects .project__texts .project__title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+@media (width > 360px) {
+  .projects .project__texts .project__title {
+    font-size: 2.5rem;
+  }
+}
+.projects .project__container-links {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.projects .project__container-links .project__link {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.6rem;
+  border: 2px solid #FFF;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+.projects .project__container-links .project__link:hover {
+  background-color: #6421d8;
+  border-color: #6421d8;
+}
+.projects .project__container-links .project__link:active {
+  border-color: rgba(113, 50, 221, 0.5254901961);
+  background-color: rgba(113, 50, 221, 0.5254901961);
 }
 
 /*# sourceMappingURL=app.css.map */

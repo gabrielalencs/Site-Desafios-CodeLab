@@ -3,7 +3,7 @@
 
 .projects {
     max-width: 121.6rem;
-    margin: 15rem auto 55rem;
+    margin: 10rem auto 55rem;
     font-family: 'Archivo', sans-serif;
     padding: 0 4rem;
 
@@ -23,35 +23,24 @@
     }
 
     &__container {
-        margin-top: 10rem;
+        margin-top: 6rem;
         display: flex;
         justify-content: space-between;
         gap: 5rem;
     }
 
-    
     &__project {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         border: 2px solid #1b1b1b;
         border-radius: 2rem;
     }
 
-    .project__texts {
-        padding: 5rem 3rem;
-        background-color: color.$dark-20;
-        border-radius: 0 0 1rem 1rem;
-
-        .project__technologies {
-            font-size: 1.6rem;
-            color: #cccccc;
-        }
-    }
-
     .project__images {
         border-radius: 2rem 2rem 0 0;
-        height: 280px;
+        // height: 280px;
+        height: 20rem;
         background-image: url('../images/projects/projeto_01.png');
         background-repeat: no-repeat;
         background-position: top;
@@ -60,6 +49,56 @@
 
         &:hover {
             background-position: bottom;
+        }
+    }
+
+    .project__texts {
+        padding: 4rem 3rem;
+        background-color: color.$dark-20;
+        border-radius: 0 0 1rem 1rem;
+
+        .project__technologies {
+            font-size: 1.3rem;
+            color: #cccccc;
+        }
+
+        .project__title {
+            margin-top: 1.5rem;
+            font-size: 2rem;
+            // color: #4b268d;
+
+            @include media.mobile {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .project__container-links {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        gap: 2rem;
+
+        .project__link {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.6rem;
+            border: 2px solid #FFF;
+            // color: color.$primary-color;
+            padding: 1rem;
+            border-radius: 1rem;
+            transition: all .3s;
+
+            &:hover {
+                background-color: #6421d8;
+                border-color: #6421d8;
+            }
+
+            &:active {
+                border-color: #7132dd86;
+                background-color: #7132dd86;
+            }
         }
     }
 }
