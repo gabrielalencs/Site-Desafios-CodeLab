@@ -4,9 +4,8 @@
 .introduction {
     max-width: 121.6rem;
     margin: 10rem auto 0;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif; 
     text-align: center;
-
 
     @include media.desktops {
         display: flex;

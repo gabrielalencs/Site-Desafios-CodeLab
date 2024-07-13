@@ -1,0 +1,65 @@
+@use '../abstracts/colors' as color;
+@use '../abstracts/breakpoints' as media;
+
+.projects {
+    max-width: 121.6rem;
+    margin: 15rem auto 55rem;
+    font-family: 'Archivo', sans-serif;
+    padding: 0 4rem;
+
+    &__title {
+        font-size: 3rem;
+        max-width: max-content;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 75%;
+            height: 0.3rem;
+            border-radius: 2rem;
+            margin-top: 0.8rem;
+            background-image: linear-gradient(90deg, #794fdb 0%, #4f22b9 92.32%);
+        }
+    }
+
+    &__container {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    
+    &__project {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #1b1b1b;
+        border-radius: 2rem;
+    }
+
+    .project__texts {
+        padding: 5rem 3rem;
+        background-color: color.$dark-20;
+        border-radius: 0 0 1rem 1rem;
+
+        .project__technologies {
+            font-size: 1.6rem;
+            color: #cccccc;
+        }
+    }
+
+    .project__images {
+        border-radius: 2rem 2rem 0 0;
+        height: 280px;
+        background-image: url('../images/projects/projeto_01.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 130%;
+        transition: all 1.2s ease 0s;
+
+        &:hover {
+            background-position: bottom;
+        }
+    }
+}
