@@ -295,9 +295,14 @@ a:active {
 }
 .projects__container {
   margin-top: 6rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  display: grid;
+  gap: 7rem;
+}
+@media (width >= 768px) {
+  .projects__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+  }
 }
 .projects__project {
   width: 100%;
@@ -309,14 +314,29 @@ a:active {
 .projects .project__images {
   border-radius: 2rem 2rem 0 0;
   height: 20rem;
-  background-image: url("../images/projects/projeto_01.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 130%;
   transition: all 1.2s ease 0s;
 }
 .projects .project__images:hover {
   background-position: bottom;
+}
+@media (width >= 992px) {
+  .projects .project__images {
+    height: 280px;
+  }
+}
+.projects .projects__container .projects__project:nth-child(1) .project__images {
+  background-image: url("../images/projects/projeto_01.png");
+  background-size: 130%;
+}
+.projects .projects__container .projects__project:nth-child(2) .project__images {
+  background-image: url("../images/projects/projeto_02.png");
+  background-size: 100%;
+}
+.projects .projects__container .projects__project:nth-child(3) .project__images {
+  background-image: url("../images/projects/projeto_03.png");
+  background-size: 100%;
 }
 .projects .project__texts {
   padding: 4rem 3rem;
