@@ -4,7 +4,7 @@
 .introduction {
     max-width: 121.6rem;
     margin: 10rem auto 0;
-    font-family: 'Archivo', sans-serif; 
+    font-family: 'Archivo', sans-serif;
 
     @include media.desktops {
         display: flex;
@@ -55,8 +55,8 @@
             white-space: nowrap;
             overflow: hidden;
             width: 18ch;
-            animation: typing 3s steps(17) infinite alternate, 
-                       pulse .5s infinite alternate;
+            animation: typing 3s steps(17) infinite alternate,
+                pulse .5s infinite alternate;
             border-right: 5px solid color.$primary-color;
 
             @include media.mobile {
@@ -78,10 +78,10 @@
                 color: color.$primary-color;
             }
         }
-        
+
         @keyframes typing {
             0% {
-              width: 0;
+                width: 0;
             }
 
             10% {
@@ -89,7 +89,7 @@
             }
 
             80% {
-              width: 17ch;
+                width: 17ch;
             }
 
             90% {
@@ -99,8 +99,8 @@
             100% {
                 width: 17ch;
             }
-          }
-        
+        }
+
         @keyframes pulse {
             50% {
                 border-color: transparent;
@@ -155,4 +155,13 @@
             transform: translateY(0);
         }
     }
+}
+
+.white .introduction__text span,
+.white .introduction__text p {
+    color: color.$dark-10;
+}
+
+.white .introduction__text h1 {
+    color: color.$dark-20;
 }

@@ -22,6 +22,24 @@ body {
     color: #FFF;
 }
 
+.white {
+    background-color: #e4e4e4;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #101011;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: color.$dark-20;
+    border-radius: 20px;
+    border: 2px solid #101011;
+}
+
 a {
     text-decoration: none;
     color: #FFF;

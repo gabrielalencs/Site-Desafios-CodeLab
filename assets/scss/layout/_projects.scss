@@ -72,6 +72,11 @@
         background-size: 100%;
     }
 
+    .projects__container .projects__project:nth-child(4) .project__images {
+        background-image: url('../images/projects/projeto_04.png');
+        background-size: 120%;
+    }
+
     .project__texts {
         padding: 4rem 3rem;
         background-color: color.$dark-20;
@@ -118,4 +123,8 @@
             }
         }
     }
+}
+
+.white .projects__title {
+    color: color.$dark-10;
 }

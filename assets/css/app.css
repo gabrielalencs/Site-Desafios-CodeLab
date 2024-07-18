@@ -15,6 +15,24 @@ body {
   color: #FFF;
 }
 
+.white {
+  background-color: #e4e4e4;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #101011;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1C1C1F;
+  border-radius: 20px;
+  border: 2px solid #101011;
+}
+
 a {
   text-decoration: none;
   color: #FFF;
@@ -121,6 +139,18 @@ a:active {
   100% {
     transform: scale(1);
   }
+}
+
+.white .header {
+  background-color: #ebebeb;
+}
+
+.white .header__brand span:nth-child(2) {
+  color: #1C1C1F;
+}
+
+.white .themeToggle {
+  color: rgb(56, 56, 56);
 }
 
 .introduction {
@@ -274,6 +304,15 @@ a:active {
   }
 }
 
+.white .introduction__text span,
+.white .introduction__text p {
+  color: #161618;
+}
+
+.white .introduction__text h1 {
+  color: #1C1C1F;
+}
+
 .projects {
   max-width: 121.6rem;
   margin: 10rem auto 55rem;
@@ -338,6 +377,10 @@ a:active {
   background-image: url("../images/projects/projeto_03.png");
   background-size: 100%;
 }
+.projects .projects__container .projects__project:nth-child(4) .project__images {
+  background-image: url("../images/projects/projeto_04.png");
+  background-size: 120%;
+}
 .projects .project__texts {
   padding: 4rem 3rem;
   background-color: #1C1C1F;
@@ -378,6 +421,10 @@ a:active {
 .projects .project__container-links .project__link:active {
   border-color: rgba(113, 50, 221, 0.5254901961);
   background-color: rgba(113, 50, 221, 0.5254901961);
+}
+
+.white .projects__title {
+  color: #161618;
 }
 
 /*# sourceMappingURL=app.css.map */

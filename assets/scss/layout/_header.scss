@@ -1,6 +1,5 @@
 @use '../abstracts/colors' as color;
 
-
 .header {
     background-color: color.$dark-20;
     border-bottom: .1rem solid color.$primary-color;
@@ -120,4 +119,18 @@
     }
 
 
+}
+
+.white .header {
+    background-color: #ebebeb;
+}
+
+.white .header__brand {
+    & span:nth-child(2) {
+        color: color.$dark-20;
+    }
+}
+
+.white .themeToggle {
+    color: rgb(56, 56, 56);
 }
