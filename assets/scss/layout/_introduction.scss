@@ -5,6 +5,7 @@
     max-width: 121.6rem;
     margin: 10rem auto 0;
     font-family: 'Archivo', sans-serif;
+    overflow-x: hidden;
 
     @include media.desktops {
         display: flex;
@@ -129,10 +130,12 @@
     &__container-image {
         display: none;
         text-align: center;
-
+        
         @include media.desktops {
             display: block;
             flex: 1;
+            position: relative;
+            left: 4rem;
 
             img {
                 width: 70%;

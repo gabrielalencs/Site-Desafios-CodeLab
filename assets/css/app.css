@@ -157,6 +157,7 @@ a:active {
   max-width: 121.6rem;
   margin: 10rem auto 0;
   font-family: "Archivo", sans-serif;
+  overflow-x: hidden;
 }
 @media (width >= 1200px) {
   .introduction {
@@ -285,6 +286,8 @@ a:active {
   .introduction__container-image {
     display: block;
     flex: 1;
+    position: relative;
+    left: 4rem;
   }
   .introduction__container-image img {
     width: 70%;
