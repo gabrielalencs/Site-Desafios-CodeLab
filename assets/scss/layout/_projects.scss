@@ -3,7 +3,7 @@
 
 .projects {
     max-width: 121.6rem;
-    margin: 10rem auto 55rem;
+    margin: 10rem auto 0;
     font-family: 'Archivo', sans-serif;
     padding: 0 4rem;
 
@@ -80,7 +80,7 @@
     .project__texts {
         padding: 4rem 3rem;
         background-color: color.$dark-20;
-        border-radius: 0 0 1rem 1rem;
+        border-radius: 0 0 2rem 2rem;
 
         .project__technologies {
             font-size: 1.3rem;
@@ -127,4 +127,31 @@
 
 .white .projects__title {
     color: color.$dark-10;
+}
+
+.white .projects__project {
+    border-color: #dddddd;
+}
+
+.white .project__texts {
+    background-color: #FFF;
+
+    .project__technologies,
+    .project__link {
+        color: #4e4e4e;
+    }
+
+    .project__title {
+        color: color.$dark-10;
+    }
+
+    .project__link  {
+        border: 2px solid color.$dark-10;
+        color: color.$dark-20;
+        font-weight: 600;
+
+        &:hover {
+            color: white;
+        }
+    }
 }

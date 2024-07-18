@@ -1,11 +1,20 @@
 const buttonDarkMode = document.getElementById('themeToggle');
 const bodyContent = document.querySelector('body');
-const logoCodelab = document.querySelector('.introduction__container-image img');
+const logoCodelabHome = document.querySelector('.introduction__container-image img');
+const logoCodelabFooter = document.querySelector('footer img');
+
 
 function toggleImage() {
-    bodyContent.classList.contains('white')
-        ? logoCodelab.src = 'assets/images/logoCodelab_black.svg'
-        : logoCodelab.src = 'assets/images/logoCodelab_white.svg';
+
+    if (bodyContent.classList.contains('white')) {
+        logoCodelabHome.src = 'assets/images/logoCodelab_black.svg';
+        logoCodelabFooter.src = 'assets/images/logo_black.svg';
+    } else {
+        logoCodelabHome.src = 'assets/images/logoCodelab_white.svg';
+        logoCodelabFooter.src = 'assets/images/logo_white.svg';
+    }
+    
+       
 }
 
 buttonDarkMode.addEventListener('click', () => {

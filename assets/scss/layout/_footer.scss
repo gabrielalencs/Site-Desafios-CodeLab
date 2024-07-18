@@ -1,0 +1,40 @@
+@use '../abstracts/colors' as color;
+@use '../abstracts/breakpoints' as media;
+
+.footer {
+    margin-top: 15rem;
+    padding: 5rem 3rem;
+    background-color: color.$dark-20;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+
+    p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 500;
+    }
+
+    img {
+        margin-top: 1rem;
+        width: 15rem;
+
+        @include media.tablets {
+            width: 25rem;
+        }
+    }
+
+    a {
+        color: color.$primary-color;
+    }
+}
+
+.white .footer {
+    background-color: #ebebeb;
+
+    p {
+        color: color.$dark-10;
+        font-weight: 600;
+        font-size: 1.8rem;
+
+    }
+}

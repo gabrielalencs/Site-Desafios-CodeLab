@@ -315,7 +315,7 @@ a:active {
 
 .projects {
   max-width: 121.6rem;
-  margin: 10rem auto 55rem;
+  margin: 10rem auto 0;
   font-family: "Archivo", sans-serif;
   padding: 0 4rem;
 }
@@ -384,7 +384,7 @@ a:active {
 .projects .project__texts {
   padding: 4rem 3rem;
   background-color: #1C1C1F;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 2rem 2rem;
 }
 .projects .project__texts .project__technologies {
   font-size: 1.3rem;
@@ -425,6 +425,63 @@ a:active {
 
 .white .projects__title {
   color: #161618;
+}
+
+.white .projects__project {
+  border-color: #dddddd;
+}
+
+.white .project__texts {
+  background-color: #FFF;
+}
+.white .project__texts .project__technologies,
+.white .project__texts .project__link {
+  color: #4e4e4e;
+}
+.white .project__texts .project__title {
+  color: #161618;
+}
+.white .project__texts .project__link {
+  border: 2px solid #161618;
+  color: #1C1C1F;
+  font-weight: 600;
+}
+.white .project__texts .project__link:hover {
+  color: white;
+}
+
+.footer {
+  margin-top: 15rem;
+  padding: 5rem 3rem;
+  background-color: #1C1C1F;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+.footer img {
+  margin-top: 1rem;
+  width: 15rem;
+}
+@media (width >= 768px) {
+  .footer img {
+    width: 25rem;
+  }
+}
+.footer a {
+  color: #8946ff;
+}
+
+.white .footer {
+  background-color: #ebebeb;
+}
+.white .footer p {
+  color: #161618;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=app.css.map */
