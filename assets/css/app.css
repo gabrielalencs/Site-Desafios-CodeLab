@@ -352,6 +352,7 @@ a:active {
   flex-direction: column;
   border: 2px solid #1b1b1b;
   border-radius: 2rem;
+  margin: 0 auto;
 }
 .projects .project__images {
   border-radius: 2rem 2rem 0 0;
@@ -386,7 +387,13 @@ a:active {
 }
 .projects .projects__container .projects__project:nth-child(5) .project__images {
   background-image: url("../images/projects/projeto_05.png");
-  background-size: 120%;
+  background-size: 130%;
+}
+@media (width >= 768px) {
+  .projects .projects__container .projects__project:last-child:nth-child(odd) {
+    max-width: 53.8rem;
+    grid-column: span 2;
+  }
 }
 .projects .project__texts {
   padding: 4rem 3rem;
