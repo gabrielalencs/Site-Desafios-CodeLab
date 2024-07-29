@@ -384,6 +384,10 @@ a:active {
   background-image: url("../images/projects/projeto_04.png");
   background-size: 120%;
 }
+.projects .projects__container .projects__project:nth-child(5) .project__images {
+  background-image: url("../images/projects/projeto_05.png");
+  background-size: 120%;
+}
 .projects .project__texts {
   padding: 4rem 3rem;
   background-color: #1C1C1F;
