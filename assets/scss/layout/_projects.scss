@@ -47,7 +47,7 @@
         height: 20rem;
         background-repeat: no-repeat;
         background-position: top;
-        transition: all 1.2s ease 0s;
+        transition: all 1.5s ease 0s;
 
         &:hover {
             background-position: bottom;
@@ -81,6 +81,11 @@
     .projects__container .projects__project:nth-child(5) .project__images {
         background-image: url('../images/projects/projeto_05.png');
         background-size: 130%;
+    }
+
+    .projects__container .projects__project:nth-child(6) .project__images {
+        background-image: url('../images/projects/projeto_06.png');
+        background-size: 140%;
     }
 
     @include media.tablets {

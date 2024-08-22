@@ -359,7 +359,7 @@ a:active {
   height: 20rem;
   background-repeat: no-repeat;
   background-position: top;
-  transition: all 1.2s ease 0s;
+  transition: all 1.5s ease 0s;
 }
 .projects .project__images:hover {
   background-position: bottom;
@@ -388,6 +388,10 @@ a:active {
 .projects .projects__container .projects__project:nth-child(5) .project__images {
   background-image: url("../images/projects/projeto_05.png");
   background-size: 130%;
+}
+.projects .projects__container .projects__project:nth-child(6) .project__images {
+  background-image: url("../images/projects/projeto_06.png");
+  background-size: 140%;
 }
 @media (width >= 768px) {
   .projects .projects__container .projects__project:last-child:nth-child(odd) {
