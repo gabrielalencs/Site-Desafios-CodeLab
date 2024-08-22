@@ -371,7 +371,7 @@ a:active {
 }
 .projects .projects__container .projects__project:nth-child(1) .project__images {
   background-image: url("../images/projects/projeto_01.png");
-  background-size: 130%;
+  background-size: 100%;
 }
 .projects .projects__container .projects__project:nth-child(2) .project__images {
   background-image: url("../images/projects/projeto_02.png");
@@ -391,7 +391,7 @@ a:active {
 }
 .projects .projects__container .projects__project:nth-child(6) .project__images {
   background-image: url("../images/projects/projeto_06.png");
-  background-size: 140%;
+  background-size: 100%;
 }
 @media (width >= 768px) {
   .projects .projects__container .projects__project:last-child:nth-child(odd) {
