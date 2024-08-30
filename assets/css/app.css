@@ -393,6 +393,10 @@ a:active {
   background-image: url("../images/projects/projeto_06.png");
   background-size: 100%;
 }
+.projects .projects__container .projects__project:nth-child(7) .project__images {
+  background-image: url("../images/projects/projeto_07.png");
+  background-size: 120%;
+}
 @media (width >= 768px) {
   .projects .projects__container .projects__project:last-child:nth-child(odd) {
     max-width: 53.8rem;
