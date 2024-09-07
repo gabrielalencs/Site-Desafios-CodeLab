@@ -90,7 +90,13 @@
 
     .projects__container .projects__project:nth-child(7) .project__images {
         background-image: url('../images/projects/projeto_07.png');
-        background-size: 120%;
+        background-position: center;
+        background-size: 130%;
+    }
+
+    .projects__container .projects__project:nth-child(8) .project__images {
+        background-image: url('../images/projects/projeto_08.png');
+        background-size: 100%;
     }
 
     @include media.tablets {
