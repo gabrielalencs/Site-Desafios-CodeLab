@@ -99,6 +99,11 @@
         background-size: 100%;
     }
 
+    .projects__container .projects__project:nth-child(9) .project__images {
+        background-image: url('../images/projects/projeto_09.png');
+        background-size: 130%;
+    }
+
     @include media.tablets {
         .projects__container .projects__project:last-child:nth-child(odd)  {
             max-width: 53.8rem;
